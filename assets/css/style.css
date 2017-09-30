@@ -1,0 +1,75 @@
+h1 {
+ margin:  auto;
+}
+
+.index {
+ width: 90%;
+   margin: 0 auto;
+}
+
+.search {
+    margin:  auto;
+    width: 90%;
+    margin-bottom: 35px;
+}
+
+.search-par {
+    border-color: blue;
+    border-style: ridge;
+    border-width: 2px;
+    margin:  0 auto;
+    margin-top: 50px;
+    border-radius: 35px;
+    margin-bottom: 50px;
+    width: 100%;
+    
+}
+
+.articles {
+    border-color: blue;
+    border-style: ridge;
+    border-width: 2px;
+    margin:  0 auto;
+    margin-top: 50px;
+    border-radius: 35px;
+    margin-bottom: 50px;
+    width: 100%;
+    
+}
+
+
+
+
+.tab {
+    background-color: blue;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 35px;
+    overflow: hidden;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+}
+
+.jumbotron {
+    margin: 0 auto;
+}
+
+.search-btn {
+    margin-bottom: 20px;
+    margin-left: 55px;
+}
+
+#search-head {
+    margin-left: 55px;
+}
+
+.search-result {
+    background-color: aqua;
+    margin:  auto;
+    margin-bottom: 35px;
+    width: 90%;
+}
+
+h3 {
+    font-size: 25px;
+}
