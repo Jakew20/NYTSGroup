@@ -29,32 +29,6 @@ h1 {
     margin-bottom: 35px;
 }
 
-.search-par {
-    border-color: darkblue;
-    border-style: ridge;
-    border-width: 2px;
-    margin:  0 auto;
-    margin-top: 50px;
-    border-radius: 5px;
-    margin-bottom: 50px;
-    width: 100%;
-    margin-left: -15px;
-    margin-right: -15px;
-    
-}
-
-.articles {
-    border-color: darkblue;
-    border-style: ridge;
-    border-width: 2px;
-    margin:  0 auto;
-    margin-top: 50px;
-    border-radius: 5px;
-    margin-bottom: 50px;
-    width: 100%;
-    
-}
-
 .btn {
     background-color: darkblue;
 }
@@ -100,4 +74,8 @@ h1 {
 
 h3 {
     font-size: 25px;
+}
+
+.row2 {
+    margin-bottom: 30px;
 }
