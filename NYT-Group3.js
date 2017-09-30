@@ -34,14 +34,17 @@ $.ajax ({
 
 		var newDiv = $("<div>");
 
+    // Append Article Name/Headline, Author, Section
+
+    var author = data.response.docs[i].byline.original;
+
+    var articleName = data.response.docs[i].headline.main;
+
+    var section = data.response.docs[i].section_name;
+
+    $(".articles").append(newDiv);
+
 		// Append Article Name/Headline, Author, Section
-
-		// author = data.response.docs[i].byline.original
-
-		// artical name = data.response.docs[i].headline.main
-
-		// section = data.response.docs[i].section_name
-
 
 	}
 });
