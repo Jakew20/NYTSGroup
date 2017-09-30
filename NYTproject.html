@@ -6,21 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script type="text/javascript" src="NYT-Group3.js"></script>
-
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
   </head>
   
     
     
 <body class="index">
         
-
+<div class="container">
 <div class="jumbotron jumbotron-fluid" style="background-color: darkblue;">
   <div class="container">
-    <h1 class="display-3">NEW YORK TIMES SEARCH</h1>
+    <h1 class="display-3"><i class="fa fa-newspaper-o" aria-hidden="true"></i> NEW YORK TIMES SEARCH</h1>
  </div>
 </div>   
         
@@ -28,49 +28,55 @@
         
         
         
-<div  class="container search-par" >
+
   <div class="row">               
         
-     <div class="tab"><h4 id="search-head">Search Parameters</h4></div>   
+     <div class="tab"><h4 id="search-head"><i class="fa fa-file" aria-hidden="true"></i> Search Parameters</h4></div>   
         
 
-        
+<div class="col-12">        
 <div class="search" class="input-group input-group-lg">
   <h5>Search:</h5>
   <input id="search-term" type="text" class="form-control" aria-label="Username" aria-describedby="sizing-addon1">
 </div>
-
+</div>      
+      <div class="col-12">
         <div class="search" class="input-group input-group-lg">
             <h5>Number of Records to Recieve:</h5>
             <input id="number-results" type="text" class="form-control" aria-label="Username" aria-describedby="sizing-addon1">
         </div>
-  
+      </div>
+      
+            <div class="col-12">
                 <div class="search" class="input-group input-group-lg">
                     <h5>Start Date:</h5>
                     <input id="start-date" type="text" class="form-control" aria-label="Username" aria-describedby="sizing-addon1">
                 </div>
-  
+            </div>
       
+        
+      <div class="col-12">
         <div class="search" class="input-group input-group-lg">
             <h5>End Date:</h5>
             <input id="end-date" type="text" class="form-control" aria-label="Username" aria-describedby="sizing-addon1">
         </div>
-    
+      </div>
+<div class="col-12">    
  <div class="search-btn">    
-     <button id="search-btn" type="button" class="btn btn-primary">Submit</button> 
-     <button id="clear-btn" type="button" class="btn btn-primary">Clear</button>
+     <button id="search-btn" type="button" class="btn btn-primary"><i class="fa fa-magic" aria-hidden="true"></i> Submit</button> 
+     <button id="clear-btn" type="button" class="btn btn-primary"><i class="fa fa-trash-o" aria-hidden="true"></i> Clear</button>
  </div>
-    
+</div> 
     
     
     </div>     
-</div>
+
       
       
       
-  <div  class="container articles" >
+  
       <div class="row">               
-          <div class="tab"><h4 id="search-head">Top Articles</h4></div>   
+          <div class="tab"><h4 id="search-head"><i class="fa fa-check-square" aria-hidden="true"></i> Top Articles</h4></div>   
             <div class="search-result"><h3>loremi ufvgdlfiug vlsdifvlsdf glsdflvh sdlfkvhs lduv hdlfuvhsldiu aliufv hladiufg vlaidugf</h3></div>
       
             
@@ -79,9 +85,9 @@
       
       
       </div>    
-    </div>    
       
       
+</div>
       
       
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
