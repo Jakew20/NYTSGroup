@@ -28,26 +28,32 @@ $.ajax ({
 
 		articleCount++;
 
+    console.log(articleCount);
+
 		// Create new div for each article
 
 		var newDiv = $("<div>");
 
+    // Append Article Name/Headline, Author, Section
+
+    var author = data.response.docs[i].byline.original;
+
+    var articleName = data.response.docs[i].headline.main;
+
+    var section = data.response.docs[i].section_name;
+
+    $(".articles").append(newDiv);
+
 		// Append Article Name/Headline, Author, Section
-
-		author = data.response.docs[i].byline.original
-
-		artical name = data.response.docs[i].headline.main
-
-		section = data.response.docs[i].section_name
-
 
 	}
 });
 
 }
 // Click event for search button
+$(document).ready(function() {
 
-$(".search-btn").on("click", function(event) {
+$("#search-btn").on("click", function(event) {
 
   event.preventDefault();
 
@@ -68,13 +74,13 @@ $(".search-btn").on("click", function(event) {
 
   // Variable for total number of articles the user wants returned
 
-  resultAmount = $(".number-results").val();
+  resultAmount = $("#number-results").val();
 
   // Variable for beginning and ending years
 
-  beginDate = $(".start-date").val().trim();
+  beginDate = $("#start-date").val().trim();
 
-  endDate = $(".end-date").val().trim();
+  endDate = $("#end-date").val().trim();
 
 
   // If begin/end year is entered then add to url and add mmdd placeholder
@@ -90,13 +96,18 @@ $(".search-btn").on("click", function(event) {
 
   // Call run function and pass variables to use
 
+  console.log(search, resultAmount, beginDate, endDate);
+
   run(resultAmount, searchURL);
 
 });
+
 
 // Clear the articles on button click
 
 $("#clear-btn").on("click", function() {
   articleCount = 0;
   $(".articles").empty();
+});
+
 });
