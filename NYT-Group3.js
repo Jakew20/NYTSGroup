@@ -36,15 +36,25 @@ $.ajax ({
 
     // Append Article Name/Headline, Author, Section
 
-    var author = data.response.docs[i].byline.original;
+    if (data.response.docs[i].byline && data.response.docs[i].byline.original) {
+      var author = data.response.docs[i].byline.original;
+    }
+    else {
+      var author = ("Author: N/A");
+    }
 
     var articleName = data.response.docs[i].headline.main;
 
-    var section = data.response.docs[i].section_name;
+    // var section = data.response.docs[i].section_name;
 
-    $(".articles").append(newDiv);
+    newDiv.append(author, articleName);
 
-		// Append Article Name/Headline, Author, Section
+    console.log(author, articleName);
+
+    newDiv.addClass("search-result" + " col-12");
+
+    $(".articles-row").append(newDiv);
+
 
 	}
 });
@@ -63,7 +73,7 @@ $("#search-btn").on("click", function(event) {
 
   // Empty articles section
 
-  $(".articles").empty();
+  $(".articles-row").empty();
 
 
   // Variable for the user's search term and add it to the url 
@@ -107,7 +117,7 @@ $("#search-btn").on("click", function(event) {
 
 $("#clear-btn").on("click", function() {
   articleCount = 0;
-  $(".articles").empty();
+  $(".articles-row").empty();
 });
 
 });
