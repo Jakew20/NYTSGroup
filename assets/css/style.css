@@ -68,8 +68,9 @@ h1 {
 .search-result {
     background-color: aqua;
     margin:  auto;
-    margin-bottom: 35px;
     width: 90%;
+    margin-bottom: 35px;
+}
 }
 
 h3 {
