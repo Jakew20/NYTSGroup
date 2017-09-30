@@ -4,6 +4,15 @@ h1 {
  color: white;
 }
 
+.row {
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 50px;
+    border-color: darkblue;
+    border-style: ridge;
+    border-width: 2px;
+    border-radius: 5px;
+}
 
 
 .display-3 {
@@ -20,36 +29,17 @@ h1 {
     margin-bottom: 35px;
 }
 
-.search-par {
-    border-color: darkblue;
-    border-style: ridge;
-    border-width: 2px;
-    margin:  0 auto;
-    margin-top: 50px;
-    border-radius: 5px;
-    margin-bottom: 50px;
-    width: 100%;
-    
-}
-
-.articles {
-    border-color: darkblue;
-    border-style: ridge;
-    border-width: 2px;
-    margin:  0 auto;
-    margin-top: 50px;
-    border-radius: 5px;
-    margin-bottom: 50px;
-    width: 100%;
-    
-}
-
-
-
-.jumbotron {
+.btn {
     background-color: darkblue;
 }
 
+#search-btn {
+    background-color: darkblue;
+}
+
+#clear-btn {
+    background-color: darkblue;
+}
 
 .tab {
     background-color: darkblue;
@@ -84,4 +74,8 @@ h1 {
 
 h3 {
     font-size: 25px;
+}
+
+.row2 {
+    margin-bottom: 30px;
 }
